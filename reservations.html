@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>Reservations | My Car Travel</title>
+    <link href="reservations.css" rel="stylesheet">		
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">	
+  </head>
+ 
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 banner">        
+          <div class="col-3 header">                        
+            <h1><a href="https://mycartravel.com/">My Car Travel</a></h1>
+            <ul>
+              <li><a href="https://mycartravel.com/">Home</a></li>
+              <li><a href="https://art-jimmy.github.io/reservations">Reservations</a></li>
+            </ul>
+          </div><!-- end of .col-3 -->                        
+        </div><!-- end of .col-12 -->
+      </div><!-- end of .row  -->                
+    </div><!-- end of .container -->
+      
+    <div class="container">
+	  <div class="row">
+	    <div class="col-12">
+		    <h2>Reservations</h2>
+            
+		  <p>
+		    <label>Pick-Up Location</label><br />
+			<input id="pickup" placeholder="Enter pick-up address" type="text" /><br /> 	
+		  </p>
+		  <p>
+		    <label>Drop-Off Location</label><br />
+			<input id="dropoff" placeholder="Enter drop-off address" type="text" /><br />			
+		  </p>
+		  <p>Number of Passengers<br />
+		    <select id="passengers">
+			  <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>			
+		  </select>
+          </p>		  		  		  
+		<input type="submit" id="submit" class="btn btn-primary btn-block" value="Calculate Fare" />
+			  	
+		</div><!-- end of div .col-6 -->
+	  </div><!-- end of div .row -->
+	  
+	  <div class="row">
+		<div class="col-12">
+		  <h2 id="charge">Fare Details</h2>
+
+		  <div id="directions-panel">
+		  </div>
+            <p id="bookNowMessage">            
+            </p>            
+            <p id="bookNowButton">
+                Please click the <b>book now</b> button<br />
+                to book My Car Travel using Appointlet and Paypal.<br />
+              <a id="bookNowLink" href= 'https://mycartravel.appointlet.com' target='_blank'><img src='https://www.appointletcdn.com/loader/buttons/008DBD.png' alt='Book Now Appointlet'></a>
+            </p>            		  		  
+		</div>	  	  
+	  </div><!-- end of div .row -->
+	  
+	  <div class="row">
+	    <div id="map-panel" class="col-12">
+		
+		  <h2>Map</h2>
+			<div id="map">
+			</div>
+		  
+		</div>	  
+	  </div>
+	  
+	</div><!-- end of div .container -->
+      
+    <div class="container">        
+      <div class="row">
+        <div class="col-md-12 footer">
+          <p>Copyright &copy; 2017 My Car Travel - All Rights Reserved.</p>
+        </div> <!-- end of div .col-md-12 -->
+      </div> <!-- end of div .row -->
+    </div> <!-- end of div .container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+	
+	<script src="reservations.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWnR3g3ja1I9kY9Q58nSknS36VuBr5Dy8&callback=initMap&libraries=places">
+    </script>	
+	
+  </body>
+</html>

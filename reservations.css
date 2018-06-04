@@ -1,0 +1,126 @@
+@import url("bootstrap.min.css");
+
+/* Reservation.css */
+
+.col-12, .col-6 {
+  margin: 10px auto 10px auto; /* box center alignment */
+  float: left;
+  border: 1px solid #0088dd;
+  padding: 20px;
+}
+
+.banner {
+  display: block;
+  margin: 10px auto 0px auto;  /* align center */
+
+  background-image: url("20170909_112346_banner_3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  min-height: 200px;        
+
+}
+
+.header {
+  margin: -20px auto 10px auto; /* box center alignment */
+  float: none;
+  padding: 20px;
+  background-color: rgb(89, 70, 65);
+  min-height: 145px;
+  max-height: 200px;    
+  min-width: 253px;
+  max-width: 300px;  
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.header h1 {
+  font-family: 'Josefin Slab', Rockwell, Georgia, serif;
+  font-size: 28px;
+  text-align: center;
+  color: white;
+  margin-top: 15px;           
+}
+
+.header ul {
+  width: 100%;
+  padding: 5px;
+  margin: 0px auto 0px auto;
+  text-align: center;    
+}
+
+.header li {
+  display: inline;
+  margin: 0px 3px;
+  font-family: 'Josefin Slab', Rockwell, Georgia, serif;
+  font-size: 16px;
+  color: white;
+}
+
+body {
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 18px;        
+}
+
+.warning {
+  color: red;
+}
+
+h2 {
+  font-family: 'Josefin Slab', Rockwell, Georgia, serif;    
+  font-size: 1.5em;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+input {
+  font-size: 120%;
+  width: 100%;
+}
+
+  #map-panel {
+    height: 600px;  
+  }
+
+  #map {
+    display: block;
+	margin: 0px auto; /* map center alignment */
+	width: 95%;
+	height: 90%;	
+  }
+  
+      #directions-panel {	  
+		font-family: 'Roboto','sans-serif';	  	  
+        margin-top: 10px;
+        background-color: #FFEE77;
+        padding: 10px;
+        overflow: scroll;
+        height: 184px;
+      }
+
+.footer {
+  margin: 10px auto; /* box center alignment */
+  float: left;
+  padding: 20px;    
+  background-color: black;
+}
+
+.footer p {
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+/*
+.checkbox {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    span {
+        margin-left: 20px;
+        font-weight: normal;
+    }
+}
+*/
